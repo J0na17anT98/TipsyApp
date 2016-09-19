@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		A3571E1D1D8F8F1A0089C327 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3571E1C1D8F8F1A0089C327 /* AppDelegate.swift */; };
-		A3571E1F1D8F8F1A0089C327 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3571E1E1D8F8F1A0089C327 /* ViewController.swift */; };
+		A3571E1F1D8F8F1A0089C327 /* TipsyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3571E1E1D8F8F1A0089C327 /* TipsyVC.swift */; };
 		A3571E221D8F8F1A0089C327 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3571E201D8F8F1A0089C327 /* Main.storyboard */; };
 		A3571E241D8F8F1A0089C327 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3571E231D8F8F1A0089C327 /* Assets.xcassets */; };
 		A3571E271D8F8F1A0089C327 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3571E251D8F8F1A0089C327 /* LaunchScreen.storyboard */; };
+		A3571E321D8F9B430089C327 /* TipCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3571E311D8F9B430089C327 /* TipCalc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A3571E191D8F8F1A0089C327 /* TipsyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipsyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3571E1C1D8F8F1A0089C327 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A3571E1E1D8F8F1A0089C327 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A3571E1E1D8F8F1A0089C327 /* TipsyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsyVC.swift; sourceTree = "<group>"; };
 		A3571E211D8F8F1A0089C327 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3571E231D8F8F1A0089C327 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3571E261D8F8F1A0089C327 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3571E281D8F8F1A0089C327 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3571E311D8F9B430089C327 /* TipCalc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TipCalc.swift; path = ../TipCalc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		A3571E1B1D8F8F1A0089C327 /* TipsyApp */ = {
 			isa = PBXGroup;
 			children = (
+				A3571E2E1D8F9AE20089C327 /* Model */,
+				A3571E2F1D8F9AF10089C327 /* View */,
+				A3571E301D8F9AF50089C327 /* Controller */,
 				A3571E1C1D8F8F1A0089C327 /* AppDelegate.swift */,
-				A3571E1E1D8F8F1A0089C327 /* ViewController.swift */,
 				A3571E201D8F8F1A0089C327 /* Main.storyboard */,
 				A3571E231D8F8F1A0089C327 /* Assets.xcassets */,
 				A3571E251D8F8F1A0089C327 /* LaunchScreen.storyboard */,
 				A3571E281D8F8F1A0089C327 /* Info.plist */,
 			);
 			path = TipsyApp;
+			sourceTree = "<group>";
+		};
+		A3571E2E1D8F9AE20089C327 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3571E311D8F9B430089C327 /* TipCalc.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A3571E2F1D8F9AF10089C327 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A3571E301D8F9AF50089C327 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3571E1E1D8F8F1A0089C327 /* TipsyVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3571E1F1D8F8F1A0089C327 /* ViewController.swift in Sources */,
+				A3571E1F1D8F8F1A0089C327 /* TipsyVC.swift in Sources */,
+				A3571E321D8F9B430089C327 /* TipCalc.swift in Sources */,
 				A3571E1D1D8F8F1A0089C327 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +327,7 @@
 				A3571E2D1D8F8F1A0089C327 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
